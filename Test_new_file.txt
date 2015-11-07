@@ -1,0 +1,2 @@
+This is test of adding new file to repository
+
