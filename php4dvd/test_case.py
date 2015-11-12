@@ -9,7 +9,7 @@ import unittest, time, re
 
 class Untitled(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Remote('http://192.168.154.144:4444/wd/hub', webdriver.DesiredCapabilities.FIREFOX)
         self.driver.implicitly_wait(30)
         self.base_url = "https://ya.ru/"
         self.verificationErrors = []
