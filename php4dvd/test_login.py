@@ -9,9 +9,7 @@ import unittest, time, re
 
 class Untitled(unittest.TestCase):
     def setUp(self):
-        sauce_url = "http://%s:%s@ondemand.saucelabs.com:80/wd/hub"
-        self.driver = webdriver.Remote(desired_capabilities=self.desired_capabilities,command_executor=sauce_url % (x0mak, 1d866b2b-4ccd-4a9f-b56b-a5330fd26ae1))
-        self.driver = webdriver.Remote('http://192.168.154.144:4444/wd/hub', webdriver.DesiredCapabilities.FIREFOX)
+        self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.base_url = "http://localhost:8080/"
         self.verificationErrors = []
