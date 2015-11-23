@@ -25,7 +25,7 @@ class Untitled(unittest.TestCase):
         driver.find_element_by_name("submit").click()
         driver.find_element_by_css_selector("img[alt=\"Add movie\"]").click()
         driver.find_element_by_id("imdbsearch").clear()
-        driver.find_element_by_id("imdbsearch").send_keys(u"ы")
+        driver.find_element_by_id("imdbsearch").send_keys(u"Шар")
         driver.find_element_by_css_selector("input[type=\"submit\"]").click()
         self.assertTrue(self.is_element_present(By.LINK_TEXT, u"Шар"))
 
